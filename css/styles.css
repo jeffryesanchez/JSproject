@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    max-width: 1300px;
+    background-image: url(../resources/bg-cafe-lg.jpg);
+    background-repeat: no-repeat;
+    background-color: #111315;
+    background-position: top;
+    
+}
+
+#mainBody {
+    height: 680px;
+    width: 1100px;
+    background-color: #1B1D1F;
+    margin-top: 120px;
+    border-radius: 10px;
+}
+#mainCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../resources/vector.svg);
+    background-repeat: no-repeat;
+    background-position-x: 66%;
+    background-position-y: 30%;
+}
+
+#mainCard p {
+    width: 500px;
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Dm Sans';
+}
+
+h1 {
+    font-family: 'DM Sans';
+    color: #FEF7EE;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'DM Sans';
+    color: #6F757C;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+#cafes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    row-gap: 0px;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.cardCafe {
+    position: relative;
+    margin-top: 20px;
+}
+
+.header {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.nombre {
+    font-family: 'Dm Sans';
+    font-size: 16px;
+    color: #FEF7EE;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.popular {
+    background-color: #F6C768;
+    font-family: 'Dm Sans';
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 20px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    top: 0;
+}
+
+.price {
+    background-color: #BEE3CC;
+    color: #111315;
+    border-radius: 4px;
+    font-family: 'Dm Sans';
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    margin-bottom: 12px;
+}
+
+#buttons {
+    display: flex;
+    gap: 10px;
+    font-family: 'Dm Sans';
+}
+
+.details {
+    display: flex;
+    justify-content:space-between;
+    height: 35px;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    height: 30px;
+}
+
+.rating p {
+    font-family: 'Dm Sans';
+    color: #FEF7EE;
+    font-size: 14px;
+}
+
+.votesP {
+    font-family: 'Dm Sans';
+    color: #6F757C;
+}
+
+#boton1, #boton2 {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    color: #FEF7EE;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#boton1 {
+    background-color: #4D5562;
+    border-color: #4D5562;
+    border-bottom: 2px solid #4D5562;
+    border-right: 2px solid #4D5562;
+}
+
+#boton2 {
+    border-color: #1B1D1F;
+    border-top: 2px solid #1B1D1F;
+    border-left: 2px solid #1B1D1F;
+    border-bottom: 2px solid #1B1D1F;
+    border-right: 2px solid #1B1D1F;
+}
+
+.soldOut {
+    font-family: 'Dm Sans';
+    font-size: 14px;
+    font-weight: 500;
+    color: #ED735D;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
