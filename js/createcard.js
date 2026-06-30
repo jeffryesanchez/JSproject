@@ -75,6 +75,4 @@ export function createCard(cafe) {
     soldOut.classList.add("soldOut")
     nombre.classList.add("nombre")
     estrella.classList.add("estrella")
-
-    console.log(cafe.name)
 }

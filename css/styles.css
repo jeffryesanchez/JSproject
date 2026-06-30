@@ -29,7 +29,7 @@ body {
     align-items: center;
     background-image: url(../resources/vector.svg);
     background-repeat: no-repeat;
-    background-position-x: 66%;
+    background-position-x: 67%;
     background-position-y: 30%;
 }
 
@@ -60,12 +60,11 @@ p {
 
 #cafes {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     row-gap: 0px;
     width: 900px;
-    margin: 0 auto;
+    margin-left: 80px;
     margin-top: 20px;
 }
 
