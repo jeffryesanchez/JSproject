@@ -12,14 +12,14 @@ arreglo = data
   });
 const allProducts = document.getElementById("boton1")
 const availableNow = document.getElementById("boton2")
-    document.getElementById("boton2").addEventListener("click" , () => { availableNow.style.backgroundColor = "#6F757C"
+    document.getElementById("boton2").addEventListener("click" , () => { availableNow.style.backgroundColor = "#4D5562"
 allProducts.style.backgroundColor = "#1B1D1F"
 document.getElementById("cafes").textContent = ""
 arreglo.filter(item => item.available == true).forEach((cafe) => {
         createCard(cafe)
     })
   })
-  document.getElementById("boton1").addEventListener("click" , () => { allProducts.style.backgroundColor = "#6F757C"
+  document.getElementById("boton1").addEventListener("click" , () => { allProducts.style.backgroundColor = "#4D5562"
 availableNow.style.backgroundColor = "#1B1D1F"
 document.getElementById("cafes").textContent = ""
     arreglo.forEach((cafe) => {

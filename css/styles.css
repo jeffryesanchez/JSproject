@@ -13,12 +13,12 @@ body {
     background-repeat: no-repeat;
     background-color: #111315;
     background-position: top;
-    
+    height: 1200px;
 }
 
 #mainBody {
-    height: 680px;
-    width: 1100px;
+    height: 850px;
+    width: 1050px;
     background-color: #1B1D1F;
     margin-top: 120px;
     border-radius: 10px;
@@ -130,6 +130,7 @@ p {
     align-items: center;
     position: relative;
     height: 30px;
+    margin-top: 5px;
 }
 
 .rating p {
@@ -159,6 +160,7 @@ p {
 }
 
 #boton2 {
+    background-color: #1B1D1F;
     border-color: #1B1D1F;
     border-top: 2px solid #1B1D1F;
     border-left: 2px solid #1B1D1F;
@@ -174,4 +176,8 @@ p {
     position: absolute;
     right: 0;
     top: -5px;
+}
+
+.estrella {
+    margin-bottom: 25px;
 }

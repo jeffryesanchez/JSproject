@@ -14,15 +14,27 @@ export function createCard(cafe) {
     const price = document.createElement("p")
     price.textContent = cafe.price
 
+    // for (let i = 1; i <= 6; i++) {
+    //     const estrella = document.createElement("img");
+    //     if (i === 6) {
+    //         estrella.src = "./resources/Star_fill.svg"
+    //     } else {
+    //         estrella.src = "./resources/Star.svg"
+    //     }
+    // }
+    const estrella = document.createElement("img")
+    estrella.src = "./resources/Star_fill.svg"
+
     const stars = document.createElement("p")
-    stars.textContent = "⭐" + cafe.rating
+    stars.textContent = cafe.rating
     if (cafe.rating == null) {
-        stars.textContent = "⭐" + "No ratings";
-        stars.style.filter = "grayscale()"
+        stars.textContent = "No ratings";
+        stars.style.color = "#4D5562"
     }
 
     const votes = document.createElement("p")
     votes.textContent = "(" + cafe.votes + " votes)"
+    votes.style.color = "#4D5562"
     if (cafe.votes == 0) {
         votes.textContent = ""
     }
@@ -35,6 +47,7 @@ export function createCard(cafe) {
     details.appendChild(price)
 
     const rating = document.createElement("div")
+    rating.appendChild(estrella)
     rating.appendChild(stars)
     rating.appendChild(votes)
 
@@ -61,6 +74,7 @@ export function createCard(cafe) {
     price.classList.add("price")
     soldOut.classList.add("soldOut")
     nombre.classList.add("nombre")
+    estrella.classList.add("estrella")
 
     console.log(cafe.name)
 }
